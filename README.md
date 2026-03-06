@@ -9,6 +9,7 @@ The exercises are organized by date to show my learning path:
 * **[02-03]**: Structures and Recursivion
 * **Structs as Objects**
 * **The self Pointer**
+* **Const Correctness**
 
 ## 🛠️ Tools Used
 * **Language:** C (Standard C11)
