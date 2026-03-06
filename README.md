@@ -7,7 +7,7 @@ This repository contains my progress and academic exercises in **C programming**
 The exercises are organized by date to show my learning path:
 
 * **[02-03]**: Structures and Recursivion
-* **Upcoming**: New folders will be added as the course progresses.
+* **Structs as Objects**
 
 ## 🛠️ Tools Used
 * **Language:** C (Standard C11)
