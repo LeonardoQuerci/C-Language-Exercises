@@ -10,6 +10,8 @@ The exercises are organized by date to show my learning path:
 * **Structs as Objects**
 * **The self Pointer**
 * **Const Correctness**
+* **Helper Methods**
+* **Point Manager**
 
 ## 🛠️ Tools Used
 * **Language:** C (Standard C11)
