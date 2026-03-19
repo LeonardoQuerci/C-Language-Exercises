@@ -37,7 +37,6 @@ void merge(Pessoa h[],int tamanhoH, Pessoa p[],int tamanhoP, Pessoa e[],int tama
 	}
 }
 
-
 void mostrarVetor(Pessoa p[],int tamanho){
 	int i;
 	for(i=0;i<tamanho;i++){
@@ -45,7 +44,6 @@ void mostrarVetor(Pessoa p[],int tamanho){
 	}
 	printf("\n\n");
 }
-
 
 int main(){
 	Pessoa p[] = {
