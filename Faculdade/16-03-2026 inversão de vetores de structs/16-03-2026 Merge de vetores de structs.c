@@ -49,8 +49,8 @@ int main(){
 	Pessoa p[] = {
         {10, "Leonardo Querci", 40, "111.111.111-11"},
         {20, "Fulano de tal",   50, "222.222.222-22"},
-        {27, "Ciclano de tal",  80, "333.333.333-33"},
-        {33, "FULANINHO",40, "444.444.444-44"}
+		{27, "Ciclano de tal",  80, "333.333.333-33"},
+        {33, "FULANINHO",40, "444.444.444-44"},
     };
     Pessoa e[] = {
         {55, "Carlos Souza",    25, "555.555.555-55"},
