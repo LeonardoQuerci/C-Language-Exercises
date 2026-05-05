@@ -6,12 +6,9 @@ This repository contains my progress and academic exercises in **C programming**
 
 The exercises are organized by date to show my learning path:
 
-* **[02-03]**: Structures and Recursivion
-* **Structs as Objects**
-* **The self Pointer**
-* **Const Correctness**
-* **Helper Methods**
-* **Point Manager**
+* **Coddy**: activities carried out on an online study platform
+* **Faculdade**: activities carried out at the software engineering college
+
 
 ## 🛠️ Tools Used
 * **Language:** C (Standard C11)
