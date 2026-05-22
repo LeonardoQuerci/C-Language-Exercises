@@ -29,7 +29,7 @@ void mostra(Pessoa p){
 
 typedef Pessoa * Arvore;
 
-int inserir(Arvore *a, Pessoa p){
+int inserir(Pessoa **a, Pessoa p){
 	if(*a == NULL){
 		*a = (Pessoa *) malloc(sizeof(Pessoa));
 		p.esq = NULL;
@@ -41,9 +41,9 @@ int inserir(Arvore *a, Pessoa p){
 		if(strcmp((*a)->cpf, p.cpf)==0){
 			return -1; // cpf ja cadastrado
 		}else if (strcmp((*a)->cpf, p.cpf)<0){
-			return inserir((Arvore *)&(*a)->dir,p);
+			return inserir(&(*a)->dir,p);
 		}else{
-			return inserir((Arvore *)&(*a)->esq,p);
+			return inserir(&(*a)->esq,p);
 		}
 		
 	}
