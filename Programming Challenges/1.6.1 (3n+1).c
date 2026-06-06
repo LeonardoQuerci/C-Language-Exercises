@@ -1,44 +1,45 @@
-/*
-
-*/
 #include <stdio.h>
 #include <stdbool.h>
 
-
-int main(){
-	int x,y;
-	//input 
-	if(scanf("%d %d", &x, &y)!=2)return 0;
+//Descobrir o cycle lenght de x
+int cycleLenght(int x){
+	int cicleX = 0;
 	
-	int cicleX = 0, nX = x;
-	int cicleY = 0, nY = y;
-	
-	//Descobrir o cycle lenght de x
 	while (true) {
     	cicleX++; 
     
-    	if (nX == 1) {
+    	if (x == 1) {
         	break;
     	} else {
-        	if (nX % 2 == 0) nX /= 2;
-			else nX = (nX * 3) + 1; 
+        	if (x % 2 == 0) x /= 2;
+			else x = (x * 3) + 1; 
     	}
 	}
+	return cicleX;
+}
+
+int main(){
+	int x,y,i, biggerCicle = 0;
+	//input 
+	if(scanf("%d %d", &x, &y)!=2)return 0;
 	
-	//Descobrir o cycle lenght de y
-	while (true) {
-    	cicleY++;
-    
-    	if (nY == 1) {
-        	break; 
-    	}else {
-        	if (nY % 2 == 0)nY /= 2;
-			else nY = (nY * 3) + 1; 
-    	}
+	//verificando se o primeiro é menor que o segundo
+	if (x>y){
+		int aux = x;
+		x=y;
+		y=aux;
 	}
 	
-	int cicleT = cicleX + cicleY;
-	printf("%d %d %d\n",x,y,cicleT);
+	//loop para percorrer todos os numeros entre eles
+	for(i=x;i<=y;i++){
+		int z = cycleLenght(i);
+		if (z>biggerCicle){
+			biggerCicle = z;
+		}
+	}
+	
+	//output	
+	printf("%d %d %d\n",x,y,biggerCicle);
 	
 	return 0;
 }
